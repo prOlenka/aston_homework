@@ -13,6 +13,8 @@ public class CustomArrayList <T>{
     }
 
     public void add(int i, T element) {
+        System.out.println(size);
+        System.out.println(array.length);
         if (i < 0 || i > size) {
             throw new IndexOutOfBoundsException();
         }
